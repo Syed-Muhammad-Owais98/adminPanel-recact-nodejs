@@ -43,11 +43,11 @@ function App() {
 
   return (
     <div className="App">
-      <PublicRoute path="/sign-in" exact component={SignIn} />
       <Switch>
         {/* <Route path="/sign-up" exact component={SignUp} /> */}
         <Main>
-          <PrivateRoute exact path="/dashboard" component={Home} />
+          <Route path="/sign-in" exact component={SignIn} />
+          <Route exact path="/dashboard" component={Home} />
           <Route exact path="/tables" component={Tables} />
           <Route exact path="/billing" component={Billing} />
           <Route exact path="/rtl" component={Rtl} />
